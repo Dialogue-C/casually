@@ -1,8 +1,8 @@
 # 搭建VPS
 
-在vultr上新建一个服务器（点击enabled ipv4 和第四个）
+1. 在vultr上新建一个服务器（点击enabled ipv4 和第四个）
 
-摧毁旧服务器
+1. 摧毁旧服务器
 
 在命令行运行以下两句（若之前选的是Cent OS）
 
