@@ -6,6 +6,9 @@
 
 3. 在命令行运行以下两句（若之前选的是Cent OS）
 
+    wget --no-check-certificate  https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+
+    
     chmod +x shadowsocks.sh
     
     ./shadowsocks.sh 2>&1 | tee shadowsocks.log
@@ -22,3 +25,5 @@
     
     Welcome to visit:https://teddysun.com/342.html
     Enjoy it!
+
+6. 切记restart！！
