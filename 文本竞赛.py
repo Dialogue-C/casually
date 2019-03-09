@@ -102,6 +102,22 @@ test_Y = classifier.predict(test_X)
 
 
 # In[19]:
+import lightgbm as lgb
+params = {
+        'boosting': 'gbdt',
+        'application': 'multiclass',
+        'num_class': 20,
+        'learning_rate': 0.1,
+        'num_leaves':31,
+        'max_depth':-1,
+        'lambda_l1': 0,
+        'lambda_l2': 0.5,
+        'bagging_fraction' :1.0,
+        'feature_fraction': 1.0
+        }
+
+bst = lgb.train(params, d_train, num_boost_round=800, valid_sets=d_vali,feval=f1_score_vali, early_stopping_rounds=None,
+                verbose_eval=True)
 
 
 from sklearn.metrics import f1_score
